@@ -184,7 +184,7 @@
 
 #stars:after {
     content: '';
-    position: relative;
+    position: absolute;
     top: 2000px;
     width: 1px;
     height: 1px;
@@ -428,7 +428,7 @@
 
 #stars2:after {
     content: '';
-    position: relative;
+    position: absolute;
     top: 2000px;
     width: 2px;
     height: 2px;
@@ -521,7 +521,7 @@
 
 #stars3:after {
     content: '';
-    position: relative;
+    position: absolute;
     top: 2000px;
     width: 3px;
     height: 3px;
@@ -551,7 +551,7 @@
     1186px 874px #f78361, 1967px 640px #f78361, 1341px 19px #f78361, 29px 1732px #f78361,
     16px 1650px #f78361, 1021px 1075px #f78361, 723px 424px #f78361, 1175px 41px #f78361,
     494px 1957px #f78361, 1296px 431px #f78361, 175px 1507px #f78361, 831px 121px #f78361,
-    498px 1947px #f78361, 617px 880px #f78361, 240px 403px #f78361;
+    498px 1947px #f78361, 617px 880px #f78361, 240px 403px #f78361 ;
 }
 
 
