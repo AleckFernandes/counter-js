@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: "Quicksand-Light"
+}
+
+@font-face {
+    font-family: "Quicksand-Light";
+    src: local(Quicksand-Light), url(../fonts/Quicksand-Light.otf);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #29303f 0%, #090a0f 100%);
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    
+}
+
+.wrapeer{
+    margin: 0;
+}
+
+.container2{
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #161924, 0 0 5px #161924, 0 0 10px #161924;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.title{
+    margin-top: 30px;
+    color: rgb(190, 190, 190);
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.description{
+    color: #969ea7;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.counter{
+    text-decoration: none;
+    overflow: hidden;
+    justify-items: center;
+    margin: auto;
+    padding-bottom: 5vh;
+    z-index: 1;
+}
+
+#currentNumber{
+    color: #fff;
+    padding: 15px;
+    margin-top: 5vh;
+    font-size: 48px;
+    z-index: 1;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+
+#currentNumberMenos{
+    color: #fff;
+    padding: 15px;
+    margin-top: 5vh;
+    font-size: 48px;
+    z-index: 1;
+    text-shadow: 0 0 5px #f78361, 0 0 10px #f78361, 0 0 20px #f78361;
+}
+
+#currentNumberMais{
+    color: #fff;
+    padding: 15px;
+    margin-top: 5vh;
+    font-size: 48px;
+    z-index: 1;
+    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+}
+
+button{
+    margin: 25px;
+    background: transparent;
+    fill: #6c6c6d;
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+
+button svg:hover{
+    fill: #f78361;
+    background: transparent;
+    filter: drop-shadow(0px 0px 15px #f78361);
+}
+
+.container2::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 600px;
+    left: 75px;
+    top: -100px;
+    background: #ee5f74;
+    box-shadow: 0 0 10px #f78361, 0 0 20px #f78361, 0 0 50px #f78361;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container2::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: radial-gradient(ellipse at bottom, #29303f 0%, #090a0f 100%);
+    border-radius: 18px;
+}
+
+.contatos{
+    margin-top: 0;
+    padding-top: 0;
+    align-content: center;
+}
+
+.contatos svg{
+    width: 24px;
+    margin: 10px;
+    height: 24px;
+    fill:#6c6c6d;
+    opacity: 0.4;
+}
+
+.cop{
+    font-size: 9px;
+    text-align: center;
+    color: #6c6c6d;
+    margin-bottom: 10px;
+}
