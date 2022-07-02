@@ -58,7 +58,6 @@
 .counter{
     display: flex;
     text-decoration: none;
-    overflow: hidden;
     justify-items: center;
     margin: auto;
     padding-bottom: 5vh;
