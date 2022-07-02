@@ -96,11 +96,9 @@ button{
     margin: 25px;
     background: transparent;
     fill: #6c6c6d;
-    width: 20px;
-    height: 20px;
     border: 0;
+    padding: 10px
 }
-
 
 button svg:hover{
     fill: #f78361;
