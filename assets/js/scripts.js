@@ -2,26 +2,35 @@ let currentNumber = 0
 
 function decrement() {
     currentNumber--
-    console.log(currentNumber)
     attCurrentNumber()
 }
 
 function increment() {
     currentNumber++
-    console.log(currentNumber)
     attCurrentNumber()
+    
 }
 
 function reset() {
     currentNumber = 0
-    console.log(currentNumber)
     attCurrentNumber()
 }
 
 function attCurrentNumber(){
     const numUser = document.getElementById("currentNumber")
     numUser.innerText = currentNumber
-    console.log(numUser)
+    if (currentNumber > 0){
+        numUser.classList.add('positive')
+        numUser.classList.remove('negative')
+    }else if (currentNumber < 0){
+        numUser.classList.add('negative')
+        numUser.classList.remove('positive')
+    }else if (currentNumber == 0){
+        numUser.classList.remove('positive')
+        numUser.classList.remove('negative')
+    }
 }
+
+
 
 attCurrentNumber()

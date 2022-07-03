@@ -73,7 +73,7 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 
-#currentNumberMenos{
+#currentNumber.negative{
     color: #fff;
     padding: 15px;
     margin-top: 5vh;
@@ -82,7 +82,7 @@
     text-shadow: 0 0 5px #f78361, 0 0 10px #f78361, 0 0 20px #f78361;
 }
 
-#currentNumberMais{
+#currentNumber.positive{
     color: #fff;
     padding: 15px;
     margin-top: 5vh;
@@ -112,10 +112,11 @@ button svg:hover{
     height: 600px;
     left: 75px;
     top: -100px;
-    background: #ee5f74;
+    background: #f78361;
     box-shadow: 0 0 10px #f78361, 0 0 20px #f78361, 0 0 50px #f78361;
     animation: animate 4s linear infinite;
 }
+
 
 @keyframes animate {
     0%{
